@@ -353,6 +353,7 @@ body {
   }
 }
 
+/* -------------------------------about-------------------------------------- */
 span {
   color: var(--main-color);
 }
@@ -388,3 +389,66 @@ span {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
 }
+
+
+/* -----------------------------------service------------------------ */
+.services{
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+.services h2{
+  font-size: 70px;
+  min-height: auto;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.services .services-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.services-container .services-box{
+  flex: 1 1 2rem ;
+  background: white;
+  padding: 3px 2px 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 2rem;
+  width: 400px;
+  height: 320px;
+  box-shadow: 0 .1rem .5rem gray;
+  text-align: center;
+  border-top: .6rem solid var(--main-color);
+  border-bottom: .6rem solid var(--main-color);
+  transition: .5s ease;
+}
+
+.services-container .services-box:hover{
+  box-shadow: 0 .1rem 2rem gray;
+  transform: scale(1.02);
+}
+
+.services-box i{
+  font-size: 60px;
+  color: var(--main-color);
+}
+.services-box h3{
+  font-size: 30px;
+  transition: .5s ease;
+}
+
+.services-box:hover h3{
+  color: var(--main-color);
+}
+
+.services-box p{
+    font-size: 15px;
+    margin: 1rem 0 3rem;
+}
+
