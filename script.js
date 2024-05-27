@@ -1,3 +1,8 @@
+window.onscroll = () => {
+  let header = document.querySelector(".header");
+  header.classList.toggle("sticky", window.scrollY > 100);
+};
+
 const toggleIcon = document.querySelector(".toggle-icon");
 
 toggleIcon.addEventListener("click", () => {
