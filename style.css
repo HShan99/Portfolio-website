@@ -258,24 +258,37 @@ section {
 .profession-box .profession::nth-child(2) i {
   margin-bottom: 20px;
 }
-
+.profession-box .profession::nth-child(3) i {
+  margin-bottom: 20px;
+}
 .profession-box .profession::nth-child(4) i {
   margin-bottom: 20px;
 }
 
 .profession i {
   font-size: 38px;
+  align-items: center;
+}
+
+#profession1 {
+  padding-right: 50px;
+}
+#profession2 {
+  padding-right: 40px;
+}
+#profession3 {
+  padding-right: 55px;
 }
 
 .profession h3 {
   font-size: 32px;
   line-height: 1;
-  font-weight: 600;
+  font-weight: 600px;
 }
 
 .profession-box .circle {
-  width: 72%;
-  height: 72%;
+  width: 70%;
+  height: 70%;
   border: 3px solid var(--main-color);
   border-radius: 50%;
 }
@@ -462,6 +475,7 @@ span {
 .services-box p {
   font-size: 15px;
   margin: 1rem 0 3rem;
+  color: black;
 }
 
 /* -------------------portfolio section----------------- */
@@ -776,11 +790,11 @@ span {
     margin: 2.5rem 0.75rem 3rem;
   }
 
-  .home .profession-container {
+  /* .home .profession-container {
     left: 0;
     width: 100%;
-    height: 100%;
-  }
+    height: 90%;
+  } */
 
   .home .profession-container .profession-box {
     position: fixed;
@@ -791,9 +805,12 @@ span {
   }
 
   .home .profession-container .profession {
-    padding: 0 13px;
+    padding: 0 12px;
     left: auto;
     transform-origin: 0;
+  }
+  .home .profession-container .profession h3 {
+    
   }
   .home .profession-container .profession:nth-child(1) {
     transform: rotate(-90deg) translate(-120px, -210px);
@@ -801,6 +818,7 @@ span {
 
   .home .profession-container .profession:nth-child(1) i {
     margin-right: 0;
+    /* transform: rotate(360deg) translate(0px, -335px); web */
   }
 
   .home .profession-container .profession:nth-child(2) {
@@ -808,15 +826,15 @@ span {
   }
 
   .home .profession-container .profession:nth-child(3) {
-    transform: rotate(90deg) translate(-115px, -450px);
+    transform: rotate(90deg) translate(-100px, -500px);
   }
 
+  /* soft */
   .home .profession-container .profession:nth-child(4) {
-    transform: rotate(180deg) translate(-220px, -335px);
+    transform: rotate(180deg) translate(-300px, -335px);
   }
-
-  .home .profession-box .circle {
-    position: fixed;
+  */ .home .profession-box .circle {
+    position: absolute;
     width: 570px;
     height: 570px;
     z-index: -1;
@@ -824,11 +842,13 @@ span {
 
   .home .profession-container .overlay {
     position: fixed;
-    top: 70rem;
-    left: 50%;
-    right: 0;
-    transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
-    border-width: 23.9rem;
+    top: 38rem;
+    left: 0;
+    border-width: 20rem;
+    border-top: 384px solid transparent;
+    border-right: 384px solid var(--main-color);
+    border-bottom: 384px solid var(--main-color);
+    border-left: 384px solid var(--main-color);
   }
 
   .about {
